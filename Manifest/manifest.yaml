@@ -30,7 +30,7 @@ spec:
       serviceAccountName: noteapp-sa
       containers:
         - name: dotnet-noteapp
-          image: udaypagidimari/noteapp:v23
+          image: udaypagidimari/noteapp:v24
           imagePullPolicy: Always
           ports:
             - containerPort: 5050
