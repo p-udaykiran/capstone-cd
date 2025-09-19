@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: www.adityajaiswal.com
+    - host: vlearning.live
       http:
         paths:
           - path: /
@@ -20,18 +20,8 @@ spec:
                 name: dotnet-noteapp
                 port:
                   number: 80
-    - host: adityajaiswal.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: dotnet-noteapp
-                port:
-                  number: 80
+
   tls:
     - hosts:
-        - www.adityajaiswal.com
-        - adityajaiswal.com
-      secretName: adityajaiswal-co-tls
+        - vlearning.live
+      secretName: vlearning-live-tls
